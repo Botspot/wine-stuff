@@ -1,0 +1,12 @@
+prefix=/home/pi/mesa
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+gbmbackendspath=/home/pi/mesa/lib/arm-linux-gnueabihf/gbm
+
+Name: gbm
+Description: Mesa gbm library
+Version: 22.0.0-devel
+Libs: -L${libdir} -lgbm
+Libs.private: -ldl
+Cflags: -I${includedir}

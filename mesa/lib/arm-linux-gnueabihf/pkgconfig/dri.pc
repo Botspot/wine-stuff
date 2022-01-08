@@ -1,0 +1,10 @@
+prefix=/home/pi/mesa
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+dridriverdir=/home/pi/mesa/lib/arm-linux-gnueabihf/dri
+
+Name: dri
+Description: Direct Rendering Infastructure
+Version: 22.0.0-devel
+Cflags: -I${includedir}

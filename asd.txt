@@ -1,0 +1,12 @@
+"mesa" folder goes to /home/pi/ , you can change everything to use any USER name
+
+on /usr/local/bin/wine
+
+export LD_LIBRARY_PATH=/home/pi/mesa/lib/arm-linux-gnueabihf/
+export LIBGL_DRIVERS_PATH=/home/pi/mesa/lib/arm-linux-gnueabihf/dri/  
+export VK_ICD_FILENAMES=/home/pi/mesa/share/vulkan/icd.d/broadcom_icd.armv7l.json
+
+you can check that mesa version will be 22.0 with (mesa-utils required)
+
+
+LD_LIBRARY_PATH=/home/pi/mesa/lib/arm-linux-gnueabihf/ LIBGL_DRIVERS_PATH=/home/pi/mesa/lib/arm-linux-gnueabihf/dri/ /home/pi/mesa/share/vulkan/icd.d/broadcom_icd.armv7l.json glxinfo -B
