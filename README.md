@@ -5,6 +5,7 @@ This repository hosts useful files to help the installation of Wine from [Pi-App
 Currently this repository has:
 - A recent build of mesa thanks to Salva from Pi Labs
 - A pre-generated Wine prefix with everything installed and ready to go. (generated on 1/8/2022) The prefix tarball can be downloaded from the [Releases page](https://github.com/Botspot/wine-stuff/releases).
+- A collection of 6 custom icons for use in the menu. Botspot drew them all using Boxy SVG.
 
 Salva provided provided his Mesa build instructions:
 ```bash
