@@ -1,7 +1,11 @@
 # wine-mesa
-This repository hosts a recent build of Mesa, intended for use with Wine from [Pi-Apps](https://github.com/Botspot/pi-apps).
+This repository hosts useful files to help the installation of Wine from [Pi-Apps](https://github.com/Botspot/pi-apps).
 
-Thanks to Salva from Discord for providing these builds. Below, he's provided build instructions:
+Currently this repository has:
+- A recent build of mesa thanks to Salva from Pi Labs
+- A pre-generated Wine prefix with everything installed and ready to go. (generated on 1/8/2022) The prefix tarball can be downloaded from the [Releases page](https://github.com/Botspot/wine-stuff/releases).
+
+Salva provided provided his Mesa build instructions:
 ```bash
 sudo apt-get install -y libxcb-randr0-dev libxrandr-dev \
         libxcb-xinerama0-dev libxinerama-dev libxcursor-dev \
@@ -31,4 +35,13 @@ meson --prefix /home/pi/mesa -Dgles1=disabled -Dgles2=enabled -Dplatforms=x11 -D
 sudo ninja -C build/ install
 
 #then remove the unnecesary drivers from /dri folder
+```
+The Wine prefix was generated using these commands:
+```bash
+#install wine and winetricks FIRST
+
+rm -rf ~/.wine
+wine wineboot
+winetricks mfc42 vcrun6 vcrun2003 xact d3drm d3dx9_43 d3dcompiler_43 d3dx9
+tar -czvf wine-prefix.tgz /home/pi/.wine
 ```
