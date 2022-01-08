@@ -1,5 +1,5 @@
 # wine-stuff
-This repository hosts useful files to help the installation of Wine from [Pi-Apps](https://github.com/Botspot/pi-apps).
+This repository hosts useful files to help the installation of Wine from [Pi-Apps](https://github.com/Botspot/pi-apps).  
 [![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)  
 
 Currently this repository has:
