@@ -5,6 +5,7 @@ This repository hosts useful files to help the installation of Wine from [Pi-App
 Currently this repository has:
 - A recent build of mesa thanks to Salva from Pi Labs
 - A collection of 6 custom icons for use in the menu. Botspot drew them all using Boxy SVG.
+- A Windows 10 appearance theme
 
 Salva provided provided his Mesa build instructions:
 ```bash
